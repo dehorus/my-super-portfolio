@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&family=Open+Sans&display=swap");
+@import "/node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+/* Fonts */
+
+$font-titles: 'Assistant', sans-serif;
+$font-texts: 'Open Sans', sans-serif;
+
+/* Colors */
+
+$CG-blue: #0081A7;
+$CG-blue-hover: #004559;
+$Verdi-gris: #00AFB9;
+$Verdi-gris-hover: #007076;
+$base-color: #FDFCDC;
+$base-color-hover: #DAD9B6;
+$Second-Base-Peach-Color: #FED9B7;
+$Second-Base-Peach-Color-hover: #DDA16B;
+$Bitter-Sweeter: #F07167;
+$Bitter-Sweeter-hover: #B3554E;
+
+/* Rules */
+* {
+    font-family: $font-texts;
+}
+
+* { padding: 0; margin: 0;}
+
+h1, h2, h3, h4, h5 {
+    font-family: $font-titles;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 42px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 30px; 
+}
+
+h3 { font-weight: 600; font-size: 24px;} h4 { font-weight: 600; font-size: 18px;} h5 { font-weight: 300; font-size: 16px;}
