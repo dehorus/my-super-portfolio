@@ -20,6 +20,19 @@ $Bitter-Sweeter: #F07167;
 $Bitter-Sweeter-hover: #B3554E;
 
 /* Rules */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-mobile {
+    width: 95%;
+    margin: 0 auto;
+}
+
+html {
+    overflow-x: hidden;
+}
 * {
     font-family: $font-texts;
 }
