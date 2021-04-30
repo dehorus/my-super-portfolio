@@ -1,0 +1,142 @@
+@import '../index.scss';
+
+section {
+    padding-top: 19em;
+    //background-color: $Second-Base-Peach-Color;
+    background: linear-gradient(180deg, #FED9B7 0%, #FDFCDC 100%);
+
+    .profile-pic-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+
+        img {
+            width: 50%;
+        }
+
+        h2 {
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            /* Firefox */
+            -moz-transform: rotate(90deg);
+            /* IE */
+            -ms-transform: rotate(90deg);
+            /* Opera */
+            -o-transform: rotate(90deg);
+            /* Internet Explorer */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+            position: absolute;
+            left: -1em;
+            top: 2.4em;
+        }
+    }
+
+    .text-content {
+        width: 100%;
+
+        p {
+            text-align: left;
+            margin-bottom: 1em;
+            margin-top: 2em;
+            line-height: 2em;
+        }
+
+        p:last-of-type {
+            text-align: right;
+        }
+    }
+
+    .services {
+        width: 85%;
+        margin: 0 auto;
+
+        .sparkles {
+            display: none;
+        }
+
+        .service {
+            height: auto;
+            width: 100%;
+            margin: 2em 0;
+            padding: 1em 0;
+            border: 2px solid black;
+            border-radius: 2em;
+
+            img {
+                display: block;
+                width: 60%;
+                margin: 0 auto;
+            }
+
+            h3 {
+                margin-top: 1em;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* Tablet Responsive */
+@media (min-width: 768px) {
+    section {
+        padding-top: 24em;
+        height: 135%;
+
+        .profile-pic-text {
+
+            img {
+                width: 35%;
+            }
+
+            h2 {
+                font-size: 2.5em;
+            }
+        }
+
+        .text-content {
+            p {
+                font-size: 1.5em;
+            }
+        }
+
+        .services {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+            position: relative;
+
+            .sparkles {
+                display: inherit;
+                position: absolute;
+                width: 30%;
+            }
+
+            .spark-up {
+                top: 0;
+            }
+
+            .spark-down {
+                bottom: -15em;
+                right: 0;
+            }
+
+            .service {
+                height: 30vh;
+
+                img {
+                    margin-top: 3em;
+                }
+            }
+        }
+
+        .box1 {
+            transform: translateY(20em);
+        }
+
+        .box2 {
+            transform: translateY(10em);
+        }
+    }
+}
