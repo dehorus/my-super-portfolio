@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useSpring, animated } from 'react-spring';
 import logo from '../logo.svg'
 import "./Home.scss";
 import MoonIllustration from './MoonIllustration';
@@ -7,17 +8,25 @@ import About from './About';
 import Portfolio from './Portfolio';
 
 export default  function Home() {
-    const [loaded, setLoaded] = useState(false);
-    window.onload = function Load() {
-        setLoaded(true);
-    }
+    const fade = useSpring({
+        from: {
+            opacity: 0
+        },
+
+        to: {
+            opacity: 1
+        }
+    });
+
     return (
         <main className="home">
             <div className="hero">
             <div className="container-mobile">
                 <div className="text-container">
-                 <img className={`mylogo ${loaded ? "appear-left" : ""}`} src={logo} alt="myLogo"/>
-                 <h3 className={`${loaded ? "fade-in" : ""}`}>Hi! my name is Angel and i'm a Front-end developer. </h3>
+                 <animated.img className="mylogo" src={logo} alt="myLogo" style={fade}/>
+                 <div className="text">
+                     <h3>Hi! my name is Angel and i'm</h3>
+                 </div>
                 </div>
             </div>
             <Particles id="particles-js" className="particles-star"
@@ -57,7 +66,7 @@ export default  function Home() {
                     }
                 }
             ></Particles>
-            <MoonIllustration contenLoad = {loaded}></MoonIllustration>
+            <MoonIllustration></MoonIllustration>
             </div>
             <About></About>
         </main>

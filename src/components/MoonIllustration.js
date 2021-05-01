@@ -1,18 +1,9 @@
 import React, {useEffect, useState } from 'react';
 import './MoonIllustration.scss'
 
-export default function MoonIllustration(loaded) {
-    const [charged, setCharged] = useState(false);
-   
-    useEffect(() => {
-        if(loaded) {
-            setTimeout(() => {
-                setCharged(true);
-            }, 1000);   
-        }
-    }, [loaded])
+export default function MoonIllustration() {
     return(
-        <svg  className={`moon-illustration ${charged ? "appear-up" : ""}`} width="649" height="917" viewBox="0 0 649 917" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg  className="moon-illustration" width="649" height="917" viewBox="0 0 649 917" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="COMPLETE / Illustration">
 <g id="MoonSVG">
 <ellipse id="Moon" cx="327.182" cy="593.419" rx="296.539" ry="298.581" fill="#F4F4F4"/>

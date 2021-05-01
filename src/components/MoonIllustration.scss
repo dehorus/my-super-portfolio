@@ -5,7 +5,6 @@
     bottom: -22em;
     position: absolute;
     transition: all 3s ease-in-out;
-    transform: translateY(30em);
 }
 
 #SVG {
@@ -67,11 +66,7 @@
 
 /*Stars Animation*/
 
-#particles-js {
-    position: absolute;
-    bottom: 10em;
-    z-index: 5;
-}
+
 
 #star-1,
 #star-2,
