@@ -37,6 +37,90 @@
     .fade-in {
         opacity: 1;
     }
+
+    #flip {
+        height: 4em;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 0.1em;
+        margin-top: 1em;
+    }
+
+    #flip>div>span {
+        color: #fff;
+        width: 100%;
+        align-items: center;
+        height: 4em;
+        font-size: 3.2em;
+        text-align: center;
+        display: inline-block;
+        font-family: $font-titles;
+        font-weight: 700;
+        border-radius: 35px;
+    }
+
+    #flip div:first-child {
+        animation: show 5s linear infinite;
+    }
+
+    #flip div:last-child {
+        height: 4em;
+    }
+
+    #flip div {
+        height: 4em;
+    }
+
+    #flip div span {
+        height: 100%;
+        background: $Verdi-gris-hover;
+    }
+
+    #flip div:first-child span {
+        background: $CG-blue;
+        height: 100%;
+
+    }
+
+    #flip div:last-child span {
+        background: $Bitter-Sweeter;
+        height: 100%;
+    }
+
+    @keyframes show {
+        0% {
+            margin-top: -300px;
+        }
+
+        5% {
+            margin-top: -135px;
+        }
+
+        33% {
+            margin-top: -135px;
+        }
+
+        38% {
+            margin-top: -70px;
+        }
+
+        66% {
+            margin-top: -70px;
+        }
+
+        71% {
+            margin-top: 0px;
+        }
+
+        99.99% {
+            margin-top: 0px;
+        }
+
+        100% {
+            margin-top: -250px;
+        }
+    }
 }
 
 /*Moon */
@@ -64,6 +148,7 @@
         }
 
         .mylogo {
+            padding-top: 3em;
             width: 115%;
             height: 115%;
             transition: all 1.2s ease-in-out;
