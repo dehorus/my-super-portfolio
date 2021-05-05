@@ -1,0 +1,13 @@
+@import '../index.scss';
+
+main.blog-section {
+    background: linear-gradient(180deg, #FED9B7 0%, #FDFCDC 100%);
+}
+
+.articles {
+    display: grid;
+
+    img {
+        width: 100%;
+    }
+}

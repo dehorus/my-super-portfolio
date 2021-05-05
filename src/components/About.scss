@@ -29,6 +29,7 @@ section {
             position: absolute;
             left: -1em;
             top: 2.4em;
+            text-shadow: 3px 1px 0px rgba(255, 255, 255, 1);
         }
     }
 
@@ -137,6 +138,54 @@ section {
 
         .box2 {
             transform: translateY(10em);
+        }
+    }
+}
+
+/* Desktop Responsive */
+
+@media (min-width: 1024px) {
+    .about .container-mobile {
+        width: 98%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .info-content {
+        width: 45%;
+        transform: translateY(-18em);
+    }
+
+    section {
+        .profile-pic-text {
+
+            h2 {
+                top: 1.5em;
+            }
+        }
+
+        .text-content {
+            width: 75%;
+            margin: 1em auto;
+
+            p {
+                font-size: 1.3em;
+            }
+        }
+
+        .services {
+            width: 50%;
+
+            .spark-down {
+                bottom: 0;
+            }
+        }
+
+        .services .service h3 {
+            font-size: 1.5em;
+            text-shadow: none;
         }
     }
 }

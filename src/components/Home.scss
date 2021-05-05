@@ -21,6 +21,7 @@
         transition: all 2s ease-in-out;
         transform-origin: right;
         font-size: xx-large;
+        text-shadow: 3px 1px 0px rgba(255, 255, 255, 1);
     }
 
     /* Text Animation */
@@ -175,6 +176,11 @@
 
         .container-mobile {
             width: 50%;
+        }
+
+        #flip {
+            width: 60%;
+            margin: 0 auto;
         }
     }
 }

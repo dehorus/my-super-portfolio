@@ -9,8 +9,9 @@ import sparkles1 from '../draws/Sparkles-1.svg'
 
 export default function About() {
     return(
-        <section>
+        <section className="about">
             <div className="container-mobile">
+                <div className="info-content">
                 <div className="profile-pic-text">
                     <h2>ABOUT ME!</h2>
                     <img src={Photo} alt="profile-photo"/>
@@ -18,6 +19,7 @@ export default function About() {
                 <div className="text-content">
                     <p>I am a front end developer jr and designer, I am an enthusiast of new technologies, I like to be constantly learning and my purpose is to be a senior developer, create and create.</p>
                     <p>I am good at learning fast, I have skill for layout, interface creation, general management of the DOM and interaction with the client, consumption of API's.</p>
+                </div>
                 </div>
                 <div className="services">
                     <img src={sparkles} className="sparkles spark-up" alt="sparkles"/>
