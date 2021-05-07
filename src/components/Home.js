@@ -7,32 +7,49 @@ import MoonIllustration from './MoonIllustration';
 import Particles from 'react-particles-js';
 import About from './About';
 import Portfolio from './Portfolio';
+import Contact from './Contact';
+import sparkles from '../draws/Sparkles.svg'
+import sparkles1 from '../draws/Sparkles-1.svg'
+import Footer from './Footer';
 
 export default  function Home() {
-    const [flip, set] = useState(false)
-    const music = useSpring({
+   
+    const translateUP = useSpring({
         from: {
-            transform: "scale(0)",
+            transform: "translateY(1em)",
         },
 
         to: {
-            transform: "scale(1.0)",
+            transform: "translateY(0)",
         },
-        delay: 100,
-        config: config.stiff,
+        delay: 200,
+        config: config.wobbly,
+    });
+
+    const logoFade = useSpring({
+        from: {
+            transform: "translateY(2em)",
+            zIndex: -10, 
+        },
+
+        to: {
+            transform: "translateY(0)",
+            zIndex: 999, 
+        },
+        delay: 10,
+        config: config.wobbly,
     });
 
     return (
-        <>
-        <Parallax pages={3} style={ { top: '0', left: '0'} }>
-            <main className="home">
-                <ParallaxLayer offset= {0} speed={2.5}>
+        <main className="home">
+            <Parallax config={config.molasses} pages={3.5} >
+                <ParallaxLayer factor={1.5} offset= {0} speed={2.5}>
                     <div className="hero">
                         <div className="container-mobile">
                             <ParallaxLayer offset={0.1} speed={1.5}>
                             <div className="text-container">
-                                <animated.img className="mylogo" src={logo} alt="myLogo" style={music}/>
-                                <animated.div className="text" style={music}>
+                                <animated.img className="mylogo" src={logo} alt="myLogo" style={logoFade}/>
+                                <animated.div className="text" style={translateUP}>
                                     <h3>True web design</h3>
                                 </animated.div>
                             </div>
@@ -78,14 +95,23 @@ export default  function Home() {
                     <MoonIllustration></MoonIllustration>
                     </div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={0.99} speed = {1.5}>
+                <ParallaxLayer factor={1} offset={0.999} speed={2}> 
+                    <img style={{opacity: 0.4, display: 'block', width: '30%', marginTop: '40%' }} src={sparkles} className="sparkles spark-up" alt="sparkles"/>
+                    <img style={{opacity: 0.8, display: 'block', width: '50%', marginLeft: '40%', marginTop: '20%' }} src={sparkles1} className="sparkles spark-down" alt="sparkles"/>
+                </ParallaxLayer>
+                <ParallaxLayer factor={1.5}  offset={0.9} speed = {1.5}>
                     <About></About>
                 </ParallaxLayer>
-                <ParallaxLayer offset={1.7} speed={2.5}>
+                <ParallaxLayer factor={0.5} offset={1.8} speed={1}>
                     <Portfolio></Portfolio>
                 </ParallaxLayer>
-            </main>
-        </Parallax>
-        </>
+                <ParallaxLayer factor={1.6} offset={2.3} speed={2.5}>
+                    <Contact></Contact>
+                </ParallaxLayer>
+                <ParallaxLayer factor={1.6} offset={2.9} speed={2.5}>
+                    <Footer></Footer>
+                </ParallaxLayer>
+            </Parallax>
+        </main>
     ) 
 }

@@ -3,8 +3,10 @@
 
 /* Fonts */
 
-$font-titles: 'Assistant', sans-serif;
-$font-texts: 'Open Sans', sans-serif;
+$font-titles: 'Assistant',
+sans-serif;
+$font-texts: 'Open Sans',
+sans-serif;
 
 /* Colors */
 
@@ -26,20 +28,28 @@ $Bitter-Sweeter-hover: #B3554E;
 }
 
 .container-mobile {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 
 html {
     overflow-x: hidden;
 }
+
 * {
     font-family: $font-texts;
 }
 
-* { padding: 0; margin: 0;}
+* {
+    padding: 0;
+    margin: 0;
+}
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: $font-titles;
 }
 
@@ -50,7 +60,20 @@ h1 {
 
 h2 {
     font-weight: 600;
-    font-size: 30px; 
+    font-size: 30px;
 }
 
-h3 { font-weight: 600; font-size: 24px;} h4 { font-weight: 600; font-size: 18px;} h5 { font-weight: 300; font-size: 16px;}
+h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+h5 {
+    font-weight: 300;
+    font-size: 16px;
+}
