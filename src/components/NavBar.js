@@ -48,8 +48,8 @@ export default function NavBar() {
                         <li>
                         <NavLink to="/posts"> Blog </NavLink>
                         </li>
-                        <li> <a href="">Portfolio</a></li>
-                        <li><a href=""> About me</a></li>
+                        <li> <a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about"> About me</a></li>
                         <li><a href=""> Contact </a></li>
                         <div className="icons">
                             <a href=""> <img src={LinkeDin} alt=""/></a>

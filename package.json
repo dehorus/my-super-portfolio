@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.1.1",
+    "@react-spring/parallax": "^9.1.2",
+    "@react-spring/web": "^9.1.2",
     "@sanity/client": "^2.8.0",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",

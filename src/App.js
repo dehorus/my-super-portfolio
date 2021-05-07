@@ -1,19 +1,28 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, useLocation } from "react-router-dom";
+import { useTransition, animated } from 'react-spring';
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Post from "./components/Post";
 import SinglePosts from "./components/SinglePosts";
 
  function App() {
+ /* const { location } = useLocation();
+  const transitions = useTransition(location, (location) => location.pathname, {
+    from: { opacity: 0, transform: 'translate3d(100vw, 0, 0)' },
+    enter: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
+    leave: { opacity: 0, transform: 'translate3d(-20vw, 0, 0)' },
+  }); */
   return (
     <BrowserRouter>
     <NavBar />
-      <Switch>
-        <Route component={Home}  path="/" exact /> 
-        <Route component={Post} path="/posts" />
-        <Route component={SinglePosts} path="/posts/:slug"  />
-      </Switch>
-    </BrowserRouter>
+      <div>
+        <Switch>
+          <Route component={Home}  path="/" exact /> 
+          <Route component={Post} path="/posts" />
+          <Route component={SinglePosts} path="/posts/:slug"  />
+        </Switch>
+      </div> 
+      </BrowserRouter>
   )
 }
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import './About.scss';
 import Photo from '../profile-photo.png';
 import efficency from '../draws/services-il/efficency.svg';
@@ -9,11 +8,11 @@ import sparkles1 from '../draws/Sparkles-1.svg'
 
 export default function About() {
     return(
-        <section className="about">
+        <section  id ="about" className="about">
             <div className="container-mobile">
                 <div className="info-content">
                 <div className="profile-pic-text">
-                    <h2>ABOUT ME!</h2>
+                         <h2>ABOUT ME!</h2>
                     <img src={Photo} alt="profile-photo"/>
                 </div>
                 <div className="text-content">

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import sanityClient from '../helpers/client';
+import  './Portfolio.scss'
 
 export default function Portfolio() {
     const [projectData, setProjectData] = useState(null);
@@ -26,8 +27,8 @@ export default function Portfolio() {
     }, []);
 
     return (
-        <section>
-            <div className="container">
+        <section id="portfolio">
+            <div className="container-mobile">
                 <h1> My portfolio </h1>
                 <section className="portfolio-content">
                 {projectData && projectData.map((project) => (
@@ -38,8 +39,10 @@ export default function Portfolio() {
                                 <h3>{project.title}</h3>
                                 <p>{project.description}</p>
                                 <span> <strong> Finished </strong>: {" "} {new Date(project.date).toLocaleDateString()}</span>
+                                <div className="buttons">
                                 <button> <a href={project.link} target="_blank" rel="noopener noreferrer"> View project</a></button>
                                 <button> <a href={project.repository}></a>View repo on GIT!</button>
+                                </div>
                             </div>
                         </div>
                     </article>
