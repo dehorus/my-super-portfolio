@@ -9,7 +9,7 @@ import sparkles1 from '../draws/Sparkles-1.svg'
 export default function About() {
     return(
         <section  id ="about" className="about">
-            <div className="container-mobile">
+            <div className="container-about">
                 <div className="info-content">
                 <div className="profile-pic-text">
                          <h2>ABOUT ME!</h2>

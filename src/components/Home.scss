@@ -13,7 +13,14 @@
         width: 100%;
         height: 148px;
         padding-top: 10em;
+        animation: bounceIn 0.8s;
+        transform: rotate(0deg) scale(1) translateZ(0);
+        transition: all 0.4s cubic-bezier(.8, 1.8, .75, .75);
         transition: all 1.2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    }
+
+    .mylogo:hover {
+        transform: rotate(10deg) scale(1.1);
     }
 
     h3 {
@@ -122,10 +129,119 @@
             margin-top: -250px;
         }
     }
+
+    .direction {
+        padding-top: 0;
+        width: 100%;
+        height: 60vh;
+    }
 }
 
-/*Moon */
+/* Magic Aurora */
 
+$diameter: 18vmax;
+
+.aurora {
+    background: #000;
+    position: relative;
+
+    a {
+        color: rgba(255, 255, 255, 0.7);
+        letter-spacing: .7em;
+        text-align: center;
+        display: block;
+        padding: 75% 0;
+        text-decoration: none;
+        font-size: 15pt;
+        font-weight: normal;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        position: relative;
+        width: 1px;
+        height: 1px;
+        border-radius: 100%;
+        opacity: 0.18;
+    }
+
+    &:before {
+        box-shadow: 0 0 $diameter $diameter red;
+        animation: hue 5s 0s linear infinite,
+            move1 10s 0s linear infinite;
+    }
+
+    &:after {
+        box-shadow: 0 0 $diameter $diameter cyan;
+        animation: hue 10s 0s linear infinite,
+            move2 20s 0s linear infinite;
+    }
+}
+
+@keyframes hue {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes move1 {
+    0% {
+        top: 0vh;
+        left: 50vw
+    }
+
+    25% {
+        left: 0vw;
+    }
+
+    50% {
+        top: 100vh;
+    }
+
+    75% {
+        left: 100vw;
+    }
+
+    100% {
+        top: 0vh;
+        left: 50vw;
+    }
+}
+
+@keyframes move2 {
+    0% {
+        top: 50vh;
+        left: 100vw
+    }
+
+    25% {
+        top: 100vh;
+    }
+
+    50% {
+        left: 0vw;
+    }
+
+    75% {
+        top: 0vh;
+    }
+
+    100% {
+        top: 50vh;
+        left: 100vw;
+    }
+}
 
 /* Desktop */
 
@@ -182,5 +298,27 @@
             width: 60%;
             margin: 0 auto;
         }
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 1;
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
     }
 }

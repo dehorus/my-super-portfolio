@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import { NavLink } from 'react-router-dom';
 
 import AstroIllustration from './AstroIllustration';
@@ -13,29 +13,31 @@ import Behance from '../draws/Behance.svg';
 
 
 export default function Footer() {
+    const parallax = useRef()
     return(
         <footer className="footer">
             <AstroIllustration></AstroIllustration>
             <div className="container-mobile">
                 <ul>
                     <li>
-                    <NavLink to="/" exact> Home </NavLink>
+                        <NavLink to="/" exact> Home </NavLink>
                     </li>
                     <li>
-                    <NavLink to="/posts"> Blog </NavLink>
+                        <NavLink to="/posts"> Blog </NavLink>
                     </li>
-                    <li>    <a href="#portfolio">Portfolio</a></li>
-                    <li>    <a href="#about"> About me</a></li>
-                    <li>    <a href=""> Contact </a></li>
-                        <div className="icons">
+                    <li>   <a href="#portflio">Portfolio</a>  </li>
+                    <li>   <a href="#about"> About me</a>  </li>
+                    <li>   <a href="#contact"> Contact </a>    </li>
+                    <div className="icons">
                             <a href=""> <img src={LinkeDin} alt=""/></a>
                             <a href=""> <img src={Instagram} alt=""/></a>
                             <a href=""> <img src={CodePen} alt=""/></a>
                             <a href=""> <img src={GitHub} alt=""/></a>
                             <a href=""> <img src={Behance} alt=""/></a>
-                        </div>
+                    </div>
                     </ul>
             </div>
+            <p>Made with <strong>ReactJS, Sanity, React-spring</strong></p>
         </footer>
     )
 }

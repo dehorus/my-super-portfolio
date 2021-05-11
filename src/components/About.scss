@@ -5,6 +5,12 @@ section {
     padding-top: 10em;
     //background-color: $Second-Base-Peach-Color;
 
+
+    .container-about {
+        width: 95%;
+        margin: 0 auto;
+    }
+
     .profile-pic-text {
         display: flex;
         flex-direction: row;
@@ -42,7 +48,7 @@ section {
             margin-top: 2em;
             line-height: 2em;
             font-weight: 600;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
         }
 
         p:last-of-type {
@@ -62,10 +68,11 @@ section {
         .service {
             height: auto;
             width: 100%;
-            margin: 2em 0;
+            margin: 1em 0;
             padding: 1em 0;
             border: 2px solid black;
             border-radius: 2em;
+            background-color: white;
 
             img {
                 display: block;
@@ -76,6 +83,8 @@ section {
             h3 {
                 margin-top: 1em;
                 text-align: center;
+                font-size: 1.4em;
+                letter-spacing: 2px;
             }
         }
     }

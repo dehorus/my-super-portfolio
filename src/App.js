@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Switch, useLocation } from "react-router-dom";
 import { useTransition, animated } from 'react-spring';
+import Contact from "./components/Contact";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
+import Portfolio from "./components/Portfolio";
 import Post from "./components/Post";
 import SinglePosts from "./components/SinglePosts";
 
@@ -20,6 +22,8 @@ import SinglePosts from "./components/SinglePosts";
           <Route component={Home}  path="/" exact /> 
           <Route component={Post} path="/posts" />
           <Route component={SinglePosts} path="/posts/:slug"  />
+          <Route component={Portfolio} path="/portfolio"/>
+          <Route component={Contact} path="/contact"/>
         </Switch>
       </div> 
       </BrowserRouter>

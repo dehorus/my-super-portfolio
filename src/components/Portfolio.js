@@ -1,6 +1,10 @@
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+
+import { useSpring, animated, config } from 'react-spring';
 import React, { useState, useEffect } from 'react'
 import sanityClient from '../helpers/client';
 import  './Portfolio.scss'
+import Footer from './Footer';
 
 export default function Portfolio() {
     const [projectData, setProjectData] = useState(null);
@@ -28,11 +32,15 @@ export default function Portfolio() {
 
     return (
         <section id="portfolio">
+            <Parallax config={config.molasses} pages={1.16}>
             <div className="container-mobile">
-                <h1> My portfolio </h1>
+                    <ParallaxLayer factor={1.5} offset={0} speed = {2}>
+                        <h1> My portfolio </h1>
+                    </ParallaxLayer>
+                    <ParallaxLayer factor={1.5} offset={0.05} speed = {1.5} >
                 <section className="portfolio-content">
                 {projectData && projectData.map((project) => (
-                    <article className="cards-portfolio">         
+                    <article className="cards-portfolio">
                         <div className="card">
                             <img src={project.imageP.asset.url} alt={project.imageP.alt}/>
                             <div className="content">
@@ -46,9 +54,15 @@ export default function Portfolio() {
                             </div>
                         </div>
                     </article>
+                    
                     ))}
                 </section>
+                </ParallaxLayer>
+                    <ParallaxLayer factor={1} offset={0.9} speed={1.6}>
+                        <Footer></Footer>
+                    </ParallaxLayer>
             </div>
+            </Parallax>
         </section>
     )
 }

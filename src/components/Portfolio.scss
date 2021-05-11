@@ -1,10 +1,11 @@
 @import '../index.scss';
 
 section#portfolio {
-    padding: 0;
+    padding: 10em 0;
     margin: 0;
-    background: transparent;
+    background: linear-gradient(180deg, #FED9B7 0%, #FDFCDC 100%);
     position: relative;
+    height: 150vh;
 
     .container-mobile {
         width: 100%;
@@ -28,7 +29,7 @@ section#portfolio {
 
                 img {
                     width: 100%;
-                    height: 145%;
+                    height: 25em;
                 }
 
                 .content {
@@ -56,5 +57,15 @@ section#portfolio {
                 }
             }
         }
+    }
+
+    button {
+        background-color: transparent;
+        display: block;
+        width: 100%;
+        padding-top: 1.2em;
+        border-radius: 15px;
+        border: 1px solid white;
+        color: white;
     }
 }

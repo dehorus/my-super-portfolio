@@ -1,0 +1,170 @@
+svg {
+    width: 100%;
+}
+
+g#Astronaut {
+    animation: astroNaut 10s linear infinite;
+    transform-origin: center;
+    transition: all 3s ease-in-out;
+}
+
+g#Earth {
+    animation: moonRot 15s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+circle#Ellipse9 {
+    animation: eclipse9 5s linear infinite;
+}
+
+circle#Ellipse10 {
+    animation: eclipse10 8s linear infinite;
+}
+
+circle#Ellipse11 {
+    animation: eclipse11 10s linear infinite;
+}
+
+circle#Ellipse12 {
+    animation: eclipse12 11s linear infinite;
+}
+
+circle#Ellipse13 {
+    animation: eclipse13 11s linear infinite;
+}
+
+circle#Ellipse14 {
+    animation: eclipse14 13s linear infinite;
+}
+
+circle#Ellipse15 {
+    animation: eclipse15 12s linear infinite;
+}
+
+@keyframes moonRot {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(180deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+
+}
+
+@keyframes astroNaut {
+    0% {
+        transform: translateY(8em);
+    }
+
+    50% {
+        transform: translateY(-8em);
+    }
+
+    100% {
+        transform: translateY(8em);
+    }
+}
+
+@keyframes eclipse9 {
+    0% {
+        transform: translate(5em, 5em);
+    }
+
+    50% {
+        transform: translate(-5em, -5em);
+    }
+
+    100% {
+        transform: translate(5em, 5em);
+    }
+}
+
+@keyframes eclipse10 {
+    0% {
+        transform: translate(2em, 7em);
+    }
+
+    50% {
+        transform: translate(-2em, -7em);
+    }
+
+    100% {
+        transform: translate(2em, 7em);
+    }
+}
+
+@keyframes eclipse11 {
+    0% {
+        transform: translate(-5em, 8em);
+    }
+
+    50% {
+        transform: translate(5em, -8em);
+    }
+
+    100% {
+        transform: translate(-5em, 8em);
+    }
+}
+
+@keyframes eclipse12 {
+    0% {
+        transform: translate(-10em, 6em);
+    }
+
+    50% {
+        transform: translate(10em, -6em);
+    }
+
+    100% {
+        transform: translate(-10em, 6em);
+    }
+}
+
+@keyframes eclipse13 {
+    0% {
+        transform: translate(-3em, 9em);
+    }
+
+    50% {
+        transform: translate(3em, -9em);
+    }
+
+    100% {
+        transform: translate(-3em, 9em);
+    }
+}
+
+@keyframes eclipse14 {
+    0% {
+        transform: translate(6em, -8em);
+    }
+
+    50% {
+        transform: translate(-6em, 8em);
+    }
+
+    100% {
+        transform: translate(6em, -8em);
+    }
+}
+
+@keyframes eclipse15 {
+    0% {
+        transform: translate(-9em, -4em);
+    }
+
+    50% {
+        transform: translate(9em, 4em);
+    }
+
+    100% {
+        transform: translate(-9em, -4em);
+    }
+}
