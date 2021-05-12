@@ -1,10 +1,15 @@
 @import '../index.scss';
 
+main#contact-site {
+    background: linear-gradient(180deg, #FED9B7 0%, #FDFCDC 100%);
+    height: 100vh;
+    width: 100%;
+    padding-top: 5em;
+}
+
 form.contact-form {
     background-color: white;
     padding: 2em 2em;
-    border-radius: 2em;
-    border: black 2px solid;
 
     h2 {
         text-align: center;

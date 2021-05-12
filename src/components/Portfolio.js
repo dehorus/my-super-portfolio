@@ -31,9 +31,9 @@ export default function Portfolio() {
     }, []);
 
     return (
-        <section id="portfolio">
-            <Parallax config={config.molasses} pages={1.16}>
-            <div className="container-mobile">
+        <main id="portfolio">
+            <Parallax config={config.molasses} pages={1.45}>
+                <div className="container-portfolio">
                     <ParallaxLayer factor={1.5} offset={0} speed = {2}>
                         <h1> My portfolio </h1>
                     </ParallaxLayer>
@@ -48,8 +48,8 @@ export default function Portfolio() {
                                 <p>{project.description}</p>
                                 <span> <strong> Finished </strong>: {" "} {new Date(project.date).toLocaleDateString()}</span>
                                 <div className="buttons">
-                                <button> <a href={project.link} target="_blank" rel="noopener noreferrer"> View project</a></button>
-                                <button> <a href={project.repository}></a>View repo on GIT!</button>
+                                <button className="site-btn"> <a href={project.link} target="_blank" rel="noopener noreferrer"> View site! </a></button>
+                                <button className="git-btn"> <a href={project.repository}> View repo on github! </a></button>
                                 </div>
                             </div>
                         </div>
@@ -58,11 +58,11 @@ export default function Portfolio() {
                     ))}
                 </section>
                 </ParallaxLayer>
-                    <ParallaxLayer factor={1} offset={0.9} speed={1.6}>
+                    <ParallaxLayer className="parallaxFooter" factor={1} offset={0.999} speed={1.6}>
                         <Footer></Footer>
                     </ParallaxLayer>
-            </div>
+                </div>
             </Parallax>
-        </section>
+        </main>
     )
 }

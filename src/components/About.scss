@@ -43,7 +43,7 @@ section {
         width: 100%;
 
         p {
-            text-align: left;
+            text-align: center;
             margin-bottom: 1em;
             margin-top: 2em;
             line-height: 2em;
@@ -52,7 +52,7 @@ section {
         }
 
         p:last-of-type {
-            text-align: right;
+            text-align: center;
         }
     }
 
@@ -73,10 +73,11 @@ section {
             border: 2px solid black;
             border-radius: 2em;
             background-color: white;
+            z-index: 999;
 
             img {
                 display: block;
-                width: 60%;
+                width: 40%;
                 margin: 0 auto;
             }
 
@@ -120,36 +121,19 @@ section {
             gap: 1em;
             position: relative;
 
-            .sparkles {
-                display: inherit;
-                position: absolute;
-                width: 30%;
-            }
-
-            .spark-up {
-                top: 0;
-            }
-
-            .spark-down {
-                bottom: -15em;
-                right: 0;
-            }
-
             .service {
                 height: 30vh;
+
+                h3 {
+                    width: 98%;
+                    margin: 0 auto;
+                    margin-top: 1em;
+                }
 
                 img {
                     margin-top: 3em;
                 }
             }
-        }
-
-        .box1 {
-            transform: translateY(20em);
-        }
-
-        .box2 {
-            transform: translateY(10em);
         }
     }
 }

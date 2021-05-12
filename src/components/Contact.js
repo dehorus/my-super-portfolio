@@ -1,6 +1,7 @@
 import React from 'react';
 import './Contac.scss';
 import {useForm, ValidationError} from '@formspree/react'
+import Footer from './Footer';
 
 export default function Contact() {
     const [submit, setSubmit] = useForm("xvovdrvz");
@@ -8,7 +9,7 @@ export default function Contact() {
         return <p> Thanks for contact! :) </p>
     }
     return(
-        <>
+        <main id="contact-site">
             <form onSubmit={setSubmit} id="contact" className="contact-form">
                 <h2>Contact me!</h2>
                 <label htmlFor="name">Name</label>
@@ -25,6 +26,7 @@ export default function Contact() {
                 <ValidationError prefix="Message" field="message" errors={submit.errors}  />
                 <button type="submit" disabled={submit.submitting}>CONTACT</button>
             </form>
-        </>
+            <Footer></Footer>
+        </main>
     )
 }

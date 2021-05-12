@@ -25,7 +25,7 @@ export default  function Home() {
             transform: "translateY(0)",
             opacity: 1
         },
-        delay: 500,
+        delay: 1000,
         config: config.wobbly,
     });
 
@@ -91,12 +91,14 @@ export default  function Home() {
                 <ParallaxLayer factor={1.5}  offset={0.9} speed = {1.5}>
                     <About></About>
                 </ParallaxLayer>
-                <ParallaxLayer offset={1.4} speed={1.2}>
+                <ParallaxLayer offset={1} speed={1.2}>
+                    <div className="black-space">
                     <section className ="direction aurora">
                         <NavLink to="/portfolio"> Portfolio <span> 🚀 </span> </NavLink>
                     </section>
+                    </div>  
                 </ParallaxLayer>
-                <ParallaxLayer factor={1} offset={1.99} speed={2.5}>
+                <ParallaxLayer factor={1} offset={1.999} speed={2.5}>
                     <Footer></Footer>
                 </ParallaxLayer>
             </Parallax>

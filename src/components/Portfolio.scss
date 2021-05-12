@@ -1,14 +1,14 @@
 @import '../index.scss';
 
-section#portfolio {
-    padding: 10em 0;
+main#portfolio {
     margin: 0;
     background: linear-gradient(180deg, #FED9B7 0%, #FDFCDC 100%);
     position: relative;
     height: 150vh;
 
-    .container-mobile {
+    .container-portfolio {
         width: 100%;
+        padding-top: 10em;
     }
 
     h1 {
@@ -20,6 +20,8 @@ section#portfolio {
         background: transparent;
         display: grid;
         padding-top: 5em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
         article.cards-portfolio {
             width: 100%;
@@ -38,11 +40,14 @@ section#portfolio {
                     width: 100%;
                     height: 100%;
                     bottom: 0;
+                    text-align: center;
 
                     h3 {
                         font-size: 2em;
                         color: white;
                         text-shadow: 3px 1px 0px rgba(0, 0, 0, 1);
+                        text-align: center;
+                        margin-top: 1em;
                     }
 
                     p,
@@ -59,13 +64,66 @@ section#portfolio {
         }
     }
 
+    .buttons {
+        margin-top: 2em;
+    }
+
     button {
         background-color: transparent;
         display: block;
         width: 100%;
-        padding-top: 1.2em;
+        margin: 1em 0;
+        padding: 1em 0;
         border-radius: 15px;
-        border: 1px solid white;
+        border: 2px solid white;
         color: white;
+        transition: all 0.5s;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.4em;
+        }
+
+        &.git-btn {
+            background-color: black;
+
+
+            &:hover a {
+                color: black;
+            }
+
+            &:hover {
+                background-color: white;
+
+            }
+        }
+
+        &.site-btn {
+            background-color: $Bitter-Sweeter;
+
+            &:hover {
+                background-color: $Bitter-Sweeter-hover;
+            }
+        }
+
+
+    }
+
+    .parallaxFooter {
+        top: 40em;
+    }
+}
+
+@media (min-width: 768px) {
+    main#portfolio {
+        section.portfolio-content {
+            height: 100%;
+            gap: 1em;
+
+            article.cards-portfolio {
+                height: 50%;
+            }
+        }
     }
 }

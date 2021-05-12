@@ -21,7 +21,6 @@ export default function About() {
                 </div>
                 </div>
                 <div className="services">
-                    <img src={sparkles} className="sparkles spark-up" alt="sparkles"/>
                     <div className="service box1">
                         <img src={design} alt="design"/>
                         <h3>Personalized design</h3>
@@ -34,7 +33,6 @@ export default function About() {
                         <img src={efficency} alt="Efficency"/>
                         <h3>Efficient operation</h3>
                     </div>
-                    <img src={sparkles1} className="sparkles spark-down" alt="sparkles"/>
                 </div>
             </div>
         </section>
