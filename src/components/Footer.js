@@ -17,7 +17,7 @@ export default function Footer() {
     return(
         <footer className="footer">
             <AstroIllustration></AstroIllustration>
-            <div className="container-mobile">
+            <div className="container-links">
                 <ul>
                     <li>
                         <NavLink to="/" exact> Home </NavLink>
@@ -35,9 +35,9 @@ export default function Footer() {
                             <a href=""> <img src={GitHub} alt=""/></a>
                             <a href=""> <img src={Behance} alt=""/></a>
                     </div>
+                    <p>Made with <strong>ReactJS, Sanity, React-spring</strong></p>
                     </ul>
             </div>
-            <p>Made with <strong>ReactJS, Sanity, React-spring</strong></p>
         </footer>
     )
 }

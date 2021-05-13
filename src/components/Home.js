@@ -6,8 +6,6 @@ import "./Home.scss";
 import MoonIllustration from './MoonIllustration';
 import Particles from 'react-particles-js';
 import About from './About';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
 import { NavLink } from 'react-router-dom';
 import sparkles from '../draws/Sparkles.svg'
 import sparkles1 from '../draws/Sparkles-1.svg'
@@ -85,16 +83,20 @@ export default  function Home() {
                     </div>
                 </ParallaxLayer>
                 <ParallaxLayer factor={1} offset={0.999} speed={2}> 
-                    <img style={{opacity: 0.4, display: 'block', width: '30%', marginTop: '40%' }} src={sparkles} className="sparkles spark-up" alt="sparkles"/>
-                    <img style={{opacity: 0.8, display: 'block', width: '50%', marginLeft: '40%', marginTop: '20%' }} src={sparkles1} className="sparkles spark-down" alt="sparkles"/>
+                    <img className="sparkle-1" src={sparkles} alt="sparkles"/>
+                    <img className="sparkle-2" src={sparkles1} alt="sparkles"/>
                 </ParallaxLayer>
                 <ParallaxLayer factor={1.5}  offset={0.9} speed = {1.5}>
                     <About></About>
                 </ParallaxLayer>
+                <ParallaxLayer factor={1} offset={0.99} speed={2}> 
+                    <img className="sparkle-3" src={sparkles} alt="sparkles"/>
+                    <img className="sparkle-4" src={sparkles1} alt="sparkles"/>
+                </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={1.2}>
                     <div className="black-space">
                     <section className ="direction aurora">
-                        <NavLink to="/portfolio"> Portfolio <span> 🚀 </span> </NavLink>
+                        <NavLink to="/portfolio"> Portfolio <span>🚀</span> </NavLink>
                     </section>
                     </div>  
                 </ParallaxLayer>

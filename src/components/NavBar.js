@@ -54,7 +54,7 @@ export default function NavBar() {
                         <li>
                         <NavLink to="/contact"> Contact </NavLink>
                         </li>
-                        <h3>My social media. </h3>
+                        <h3 className="title-social">My social media. </h3>
                         <div className="icons">
                             <a href=""> <img src={LinkeDin} alt=""/></a>
                             <a href=""> <img src={Instagram} alt=""/></a>

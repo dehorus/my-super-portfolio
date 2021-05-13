@@ -33,11 +33,15 @@ export default function Portfolio() {
     return (
         <main id="portfolio">
             <Parallax config={config.molasses} pages={1.45}>
+                <ParallaxLayer offset={0} speed = {0.5}>
+                <div className="black-space-portfolio">
+                    <section className ="direction aurora">
+                        <h3> Portfolio <span>🚀</span> </h3>
+                    </section>
+                </div> 
+                </ParallaxLayer>
                 <div className="container-portfolio">
-                    <ParallaxLayer factor={1.5} offset={0} speed = {2}>
-                        <h1> My portfolio </h1>
-                    </ParallaxLayer>
-                    <ParallaxLayer factor={1.5} offset={0.05} speed = {1.5} >
+                <ParallaxLayer factor={1.5} offset={0.05} speed = {2} >
                 <section className="portfolio-content">
                 {projectData && projectData.map((project) => (
                     <article className="cards-portfolio">
@@ -58,11 +62,9 @@ export default function Portfolio() {
                     ))}
                 </section>
                 </ParallaxLayer>
-                    <ParallaxLayer className="parallaxFooter" factor={1} offset={0.999} speed={1.6}>
-                        <Footer></Footer>
-                    </ParallaxLayer>
                 </div>
             </Parallax>
+            <Footer></Footer>
         </main>
     )
 }

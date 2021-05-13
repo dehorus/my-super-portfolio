@@ -3,8 +3,6 @@ import Photo from '../profile-photo.png';
 import efficency from '../draws/services-il/efficency.svg';
 import design from '../draws/services-il/great-desing.svg';
 import responsive from '../draws/services-il/responsive.svg';
-import sparkles from '../draws/Sparkles.svg'
-import sparkles1 from '../draws/Sparkles-1.svg'
 
 export default function About() {
     return(

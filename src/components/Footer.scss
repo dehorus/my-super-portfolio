@@ -5,6 +5,8 @@ footer.footer {
     width: 100%;
     height: 100vh;
     background: linear-gradient(180.02deg, rgba(254, 217, 183, 0) 0.01%, #4C5068 27.9%);
+    z-index: 99;
+
 
     p {
         text-align: center;
@@ -17,6 +19,7 @@ footer ul {
     width: 100%;
     height: 100%;
     padding-top: 2%;
+    list-style-type: none;
 
     li {
         text-align: center;
@@ -25,6 +28,27 @@ footer ul {
         a {
             text-decoration: none;
             color: white;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    footer.footer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        .container-links {
+            padding-top: 20em;
+        }
+
+        p {
+            padding-top: 5em;
+        }
+
+        svg {
+            padding-top: 15em;
+            width: 60%;
         }
     }
 }

@@ -2,12 +2,38 @@
 
 main#contact-site {
     background: linear-gradient(180deg, #FED9B7 0%, #FDFCDC 100%);
-    height: 100vh;
+    height: 140vh;
     width: 100%;
-    padding-top: 5em;
+
+    .black-space-contact {
+        z-index: 10;
+        width: 100%;
+        height: 40vh;
+        color: black;
+        background-color: black;
+
+        h3 {
+            color: rgba(255, 255, 255, 0.7);
+            letter-spacing: .7em;
+            text-align: center;
+            display: block;
+            padding: 40% 0;
+            text-decoration: none;
+            font-size: 15pt;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+    }
+
+    .form-complete {
+        .image-form {
+            display: none;
+        }
+    }
 }
 
 form.contact-form {
+    margin-top: 2em;
     background-color: white;
     padding: 2em 2em;
 
@@ -59,4 +85,42 @@ form label {
     display: block;
     margin-bottom: 0.5em;
 
+}
+
+@media (min-width: 768px) {
+    main#contact-site {
+        .black-space-contact {
+            h3 {
+                padding-top: 7em;
+            }
+        }
+    }
+
+    form.contact-form {
+        width: 80%;
+        margin: 2em auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    main#contact-site {
+        .form-complete {
+            display: flex;
+            flex-direction: row;
+            width: 95%;
+            margin: 0 auto;
+            padding-top: 2em;
+
+            .image-form {
+                display: initial;
+                width: 60%;
+                height: 100%;
+            }
+        }
+    }
+
+    form.contact-form {
+        width: 100%;
+        margin: 0;
+    }
 }

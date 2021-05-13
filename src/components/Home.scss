@@ -136,6 +136,38 @@
         width: 100%;
         height: 50%;
     }
+
+    .sparkle-1 {
+        opacity: 0.4;
+        display: block;
+        width: 30%;
+        margin-top: 40%;
+    }
+
+    .sparkle-2 {
+        opacity: 0.8;
+        display: block;
+        width: 50%;
+        margin-left: 40%;
+        margin-top: 20%;
+    }
+
+    .sparkle-3 {
+        opacity: 0.4;
+        display: block;
+        width: 30%;
+        margin-top: 140%;
+        z-index: -10;
+    }
+
+    .sparkle-4 {
+        opacity: 0.8;
+        display: block;
+        width: 50%;
+        margin-left: 40%;
+        margin-top: 40%;
+        z-index: -100;
+    }
 }
 
 /* Magic Aurora */
@@ -207,49 +239,49 @@ $diameter: 18vmax;
 
 @keyframes move1 {
     0% {
-        top: 0vh;
-        left: 50vw
+        top: 0%;
+        left: 50%;
     }
 
     25% {
-        left: 0vw;
+        left: 0%;
     }
 
     50% {
-        top: 100vh;
+        top: 50%;
     }
 
     75% {
-        left: 100vw;
+        left: 100%;
     }
 
     100% {
-        top: 0vh;
-        left: 50vw;
+        top: 0%;
+        left: 50%;
     }
 }
 
 @keyframes move2 {
     0% {
-        top: 50vh;
-        left: 100vw
+        top: 50%;
+        left: 100%;
     }
 
     25% {
-        top: 100vh;
+        top: 100%;
     }
 
     50% {
-        left: 0vw;
+        left: 0%;
     }
 
     75% {
-        top: 0vh;
+        top: 0%;
     }
 
     100% {
-        top: 50vh;
-        left: 100vw;
+        top: 50%;
+        left: 100%;
     }
 }
 
@@ -260,6 +292,16 @@ $diameter: 18vmax;
         .mylogo {
             height: 250px;
             padding-top: 0;
+        }
+
+        .sparkle-1 {
+            width: 30%;
+            margin-left: 5%;
+        }
+
+        .sparkle-2 {
+            width: 40%;
+            margin-left: 50%;
         }
     }
 
@@ -282,8 +324,8 @@ $diameter: 18vmax;
         }
 
         .text-container {
-            width: 80%;
-            margin: 0 auto;
+            width: 50%;
+            margin: 0 1em 1em;
         }
 
         .hero {
@@ -292,7 +334,7 @@ $diameter: 18vmax;
         }
 
         .mylogo {
-            padding-top: 3em;
+            padding-top: 0;
             width: 115%;
             height: 115%;
             transition: all 1.2s ease-in-out;
@@ -301,6 +343,11 @@ $diameter: 18vmax;
         .appear-left {
             transform: translateX(-2em);
         }
+
+    }
+
+    .title-social {
+        display: none;
     }
 }
 
@@ -313,6 +360,20 @@ $diameter: 18vmax;
 
 @media (min-width: 1300px) {
     .home {
+
+        .text-container {
+            width: 45%;
+            margin: 0 4em 1em;
+        }
+
+        h3 {
+            font-size: 3em;
+        }
+
+        .mylogo {
+            width: 100%;
+        }
+
         .hero {
             width: 100%;
         }

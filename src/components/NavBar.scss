@@ -26,7 +26,8 @@
     .hamburger-inner,
     .hamburger-inner::before,
     .hamburger-inner::after {
-        background-color: black;
+        background-color: white;
+        border: solid 1px black;
     }
 }
 
@@ -100,6 +101,7 @@
 @media (min-width: 1024px) {
     .header {
         background-color: $Second-Base-Peach-Color;
+        height: 12vh;
     }
 
     .container {
@@ -143,6 +145,7 @@
 
             a:hover {
                 color: grey;
+                transform: rotate(10deg) scale(1.1);
             }
         }
     }

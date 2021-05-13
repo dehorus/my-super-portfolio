@@ -1,8 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import './Home.scss';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+
+import { useSpring, animated, config } from 'react-spring';
 import sanityClient from '../helpers/client'
 import { Link } from 'react-router-dom';
 import './Post.scss';
+import Footer from './Footer';
 
 export default  function Post() {
 
@@ -28,9 +32,16 @@ export default  function Post() {
 
     return(
         <main className="blog-section">
+            <Parallax config={config.molasses} pages={1.45}>
+            <ParallaxLayer offset={0} speed = {0.5}>
+            <div className="black-space-blog">
+                <section className ="direction aurora">
+                    <h3> Blog <span>🗒️</span> </h3>
+                </section>
+            </div> 
+            </ParallaxLayer>
+            <ParallaxLayer factor={1.5} offset={0.05} speed = {2} >
             <section className="container-mobile">
-                <h1>Blog Posts PAGE</h1>
-                <h2> WELCOME to my blog</h2>
                 <div className="articles">
                     {postData && postData.map((post, index ) => ( 
                     <article>
@@ -47,6 +58,9 @@ export default  function Post() {
                     ))}
                 </div>
             </section>
+            </ParallaxLayer>
+            </Parallax>
+            <Footer></Footer>
         </main>
     );
 }

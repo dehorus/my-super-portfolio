@@ -1,7 +1,8 @@
 @import '../index.scss';
 
 
-section {
+section#about {
+    z-index: 999;
     padding-top: 10em;
     //background-color: $Second-Base-Peach-Color;
 
@@ -93,7 +94,7 @@ section {
 
 /* Tablet Responsive */
 @media (min-width: 768px) {
-    section {
+    section#about {
         padding-top: 24em;
         height: 135%;
 
@@ -154,12 +155,17 @@ section {
         transform: translateY(-18em);
     }
 
-    section {
+    section#about {
         .profile-pic-text {
 
             h2 {
                 top: 1.5em;
             }
+        }
+
+        .container-about {
+            display: flex;
+            flex-direction: row;
         }
 
         .text-content {
@@ -172,16 +178,24 @@ section {
         }
 
         .services {
-            width: 50%;
-
-            .spark-down {
-                bottom: 0;
-            }
+            width: 60%;
         }
 
         .services .service h3 {
             font-size: 1.5em;
             text-shadow: none;
         }
+    }
+
+    .box1 {
+        transform: translateY(8em);
+    }
+
+    .box3 {
+        transform: translateY(-8em);
+    }
+
+    .aurora a {
+        padding: 12em 0;
     }
 }

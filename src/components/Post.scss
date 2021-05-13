@@ -2,12 +2,63 @@
 
 main.blog-section {
     background: linear-gradient(180deg, #FED9B7 0%, #FDFCDC 100%);
+    padding-top: 0;
+    height: 100vh;
+
+    .black-space-blog {
+        z-index: 10;
+        width: 100%;
+        height: 40vh;
+        color: black;
+        background-color: black;
+
+        h3 {
+            color: rgba(255, 255, 255, 0.7);
+            letter-spacing: .7em;
+            text-align: center;
+            display: block;
+            padding: 7em 0;
+            text-decoration: none;
+            font-size: 15pt;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+    }
 }
 
 .articles {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 2em;
+
+    .article-post {
+        position: relative;
+    }
 
     img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    span {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(3, 3, 3, 0.7);
+        width: 100%;
+
+        h3 {
+            text-align: center;
+            padding: 1em 0;
+            color: white;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .articles {
+        padding-top: 16em;
     }
 }
