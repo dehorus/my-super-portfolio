@@ -45,7 +45,7 @@ export default  function Post() {
                 <div className="articles">
                     {postData && postData.map((post, index ) => ( 
                     <article>
-                        <Link to={"/post/" + post.slug.current} key={post.slug.current}>
+                        <Link to={"/posts/" + post.slug.current} key={post.slug.current}>
                         <span className="article-post" key={index}>
                             <img src={post.mainImage.asset.url} alt={post.mainImage.alt}
                             className="img-article"/>

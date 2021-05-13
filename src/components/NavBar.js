@@ -46,7 +46,7 @@ export default function NavBar() {
                         <NavLink to="/" exact> Home </NavLink>
                         </li>
                         <li>
-                        <NavLink to="/posts"> Blog </NavLink>
+                        <NavLink to="/post"> Blog </NavLink>
                         </li>
                         <li> 
                         <NavLink to="/portfolio"> Portfolio </NavLink>    

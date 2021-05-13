@@ -20,8 +20,8 @@ import SinglePosts from "./components/SinglePosts";
       <div>
         <Switch>
           <Route component={Home}  path="/" exact /> 
-          <Route component={Post} path="/posts" />
-          <Route component={SinglePosts} path="/posts/:slug"  />
+          <Route component={Post} path="/post" />
+          <Route component={SinglePosts} path='/posts/:slug'  />
           <Route component={Portfolio} path="/portfolio"/>
           <Route component={Contact} path="/contact"/>
         </Switch>
