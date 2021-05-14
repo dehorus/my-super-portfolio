@@ -4,7 +4,11 @@ import efficency from '../draws/services-il/efficency.svg';
 import design from '../draws/services-il/great-desing.svg';
 import responsive from '../draws/services-il/responsive.svg';
 
+
 export default function About() {
+
+   
+
     return(
         <section  id ="about" className="about">
             <div className="container-about">
