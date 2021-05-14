@@ -62,12 +62,8 @@ section#about {
         margin: 0 auto;
         padding-bottom: 1.5em;
 
-        .sparkles {
-            display: none;
-        }
-
         .service {
-            height: auto;
+            height: 100%;
             width: 100%;
             margin: 1em 0;
             padding: 1em 0;
@@ -75,18 +71,27 @@ section#about {
             border-radius: 2em;
             background-color: white;
             z-index: 999;
+            position: relative;
+            overflow: hidden;
 
             img {
                 display: block;
-                width: 40%;
+                width: 90%;
                 margin: 0 auto;
+                position: absolute;
+                top: 0;
+                opacity: 0.3;
+                left: -5em;
             }
 
             h3 {
                 margin-top: 1em;
                 text-align: center;
-                font-size: 1.4em;
+                font-size: 1.6em;
+                font-weight: 700;
                 letter-spacing: 2px;
+                padding: 2.3em 0;
+                color: black;
             }
         }
     }
@@ -123,16 +128,12 @@ section#about {
             position: relative;
 
             .service {
-                height: 30vh;
 
                 h3 {
-                    width: 98%;
+                    width: 100%;
+                    font-size: 2em;
                     margin: 0 auto;
                     margin-top: 1em;
-                }
-
-                img {
-                    margin-top: 3em;
                 }
             }
         }
@@ -179,11 +180,22 @@ section#about {
 
         .services {
             width: 60%;
+            height: 100%;
+
+            .service {
+                img {
+                    top: 4em;
+                    width: 135%;
+                    left: -5em;
+                }
+            }
         }
 
         .services .service h3 {
             font-size: 1.5em;
             text-shadow: none;
+            padding: 5em 0;
+            color: black;
         }
     }
 
@@ -193,9 +205,5 @@ section#about {
 
     .box3 {
         transform: translateY(-8em);
-    }
-
-    .aurora a {
-        padding: 12em 0;
     }
 }

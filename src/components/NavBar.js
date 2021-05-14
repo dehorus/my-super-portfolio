@@ -7,6 +7,9 @@ import CodePen from '../draws/CodePen.svg';
 import GitHub from '../draws/Github.svg';
 import Instagram from '../draws/Instagram.svg';
 import Behance from '../draws/Behance.svg';
+import BehanceBlack from '../draws/Behance-black.svg'
+import GithubBlack from '../draws/Github-black.svg'
+import LinkedinBlack from '../draws/LinkeDin-black.svg'
 
 export default function NavBar() {
     const [open, setOpen] = useState(false);
@@ -62,7 +65,12 @@ export default function NavBar() {
                             <a href=""> <img src={GitHub} alt=""/></a>
                             <a href=""> <img src={Behance} alt=""/></a>
                         </div>
-                    </ul> 
+                    </ul>
+                    <div className="icons-desktop">
+                        <a href=""> <img src={LinkedinBlack} alt="linkedin" /></a>
+                        <a href=""> <img src={GithubBlack} alt="github" /></a>
+                        <a href=""> <img src={BehanceBlack} alt="behance" /></a>
+                    </div> 
                 </nav>
             </div>
         </header>

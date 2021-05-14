@@ -15,6 +15,7 @@ import css3 from '../draws/skills/CSS.svg'
 import javascriptlogo from '../draws/skills/JS.svg'
 import sass from '../draws/skills/SASS.svg'
 import reactjs from '../draws/skills/REACT.svg'
+import rocket from "../draws/rocket-vector.svg"
 
 export default  function Home() {
    
@@ -145,9 +146,10 @@ export default  function Home() {
                             </div>
                         </div>
                         <div className="portfolio-contact">
-                        <NavLink to="/portfolio"> Portfolio <span> 🚀 </span> </NavLink>
-                        <NavLink to="/contact"> Contact <span> 📝 </span> </NavLink>
-                    </div>
+                            <NavLink to="/portfolio"> Portfolio <span> 🚀 </span> </NavLink>
+                            <NavLink to="/contact"> Contact <span> 📝 </span> </NavLink>
+                            <img src={rocket} alt="rocket" />
+                        </div>
                     </div>
                     
                 </ParallaxLayer>
