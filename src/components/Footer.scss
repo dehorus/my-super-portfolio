@@ -4,7 +4,18 @@
 footer.footer {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(180.02deg, rgba(254, 217, 183, 0) 0.02%, #4C5068 11.9%);
+    background-color: #4C5068;
+    position: relative;
+    overflow: hidden;
+
+    .footerpng {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.2;
+        filter: grayscale(1.2);
+    }
 
     p {
         text-align: center;
@@ -45,8 +56,10 @@ footer ul {
         }
 
         svg {
-            padding-top: 15em;
+            padding-top: 0;
             width: 60%;
+            z-index: 999;
+            height: 70%;
         }
     }
 }

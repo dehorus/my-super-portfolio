@@ -6,6 +6,30 @@ main#portfolio {
     position: relative;
     height: 150vh;
 
+    .portfolio-hero {
+        background-color: $Bitter-Sweeter;
+        position: relative;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+        }
+
+        h3 {
+            padding: 12em 0;
+            font-size: 1.4em;
+        }
+    }
+
+    h3 {
+        text-align: center;
+        color: white;
+        letter-spacing: 8px;
+    }
+
     .container-portfolio {
         width: 100%;
         padding-top: 10em;
@@ -22,6 +46,7 @@ main#portfolio {
         padding-top: 5em;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 2em;
 
         article.cards-portfolio {
             width: 100%;
@@ -35,7 +60,7 @@ main#portfolio {
                 }
 
                 .content {
-                    background-color: rgba(0, 0, 0, 0.3);
+                    background-color: rgba(0, 0, 0, 0.7);
                     position: absolute;
                     width: 100%;
                     height: 100%;
@@ -53,8 +78,7 @@ main#portfolio {
                     p,
                     span {
                         color: white;
-                        background-color: black;
-                        margin-top: 10%;
+                        margin-top: 2em;
                         text-align: center;
                     }
 
@@ -110,28 +134,8 @@ main#portfolio {
 
     }
 
-    .parallaxFooter {
+    .footer-parallax {
         top: 40em;
-    }
-
-    .black-space-portfolio {
-        z-index: 10;
-        width: 100%;
-        height: 40vh;
-        color: black;
-        background-color: black;
-
-        h3 {
-            color: rgba(255, 255, 255, 0.7);
-            letter-spacing: .7em;
-            text-align: center;
-            display: block;
-            padding: 40% 0;
-            text-decoration: none;
-            font-size: 15pt;
-            font-weight: normal;
-            text-transform: uppercase;
-        }
     }
 }
 
@@ -144,11 +148,15 @@ main#portfolio {
                 height: 50%;
             }
         }
+    }
+}
 
-        .black-space-portfolio {
-            h3 {
-                padding-top: 7em;
-            }
+@media (min-width: 1300px) {
+    main#portfolio {
+        section.portfolio-content {
+            width: 70%;
+            margin: 0 auto;
+            padding-top: 8em;
         }
     }
 }

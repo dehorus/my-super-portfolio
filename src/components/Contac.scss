@@ -4,25 +4,37 @@ main#contact-site {
     background: linear-gradient(180deg, #FED9B7 0%, #FDFCDC 100%);
     height: 140vh;
     width: 100%;
+    position: relative;
 
-    .black-space-contact {
-        z-index: 10;
-        width: 100%;
-        height: 40vh;
-        color: black;
-        background-color: black;
+    .contact-hero {
+        background-color: $Verdi-gris-hover;
+        position: relative;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+            filter: grayscale(1.1);
+        }
 
         h3 {
-            color: rgba(255, 255, 255, 0.7);
-            letter-spacing: .7em;
-            text-align: center;
-            display: block;
-            padding: 40% 0;
-            text-decoration: none;
-            font-size: 15pt;
-            font-weight: normal;
-            text-transform: uppercase;
+            padding: 12em 0;
+            font-size: 1.4em;
         }
+    }
+
+    h3 {
+        color: rgba(255, 255, 255, 0.7);
+        letter-spacing: .5em;
+        text-align: center;
+        display: block;
+        padding: 7em 0;
+        text-decoration: none;
+        font-size: 15pt;
+        font-weight: 700;
+        text-transform: uppercase;
     }
 
     .form-complete {

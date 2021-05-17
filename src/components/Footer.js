@@ -11,11 +11,12 @@ import GitHub from '../draws/Github.svg';
 import Instagram from '../draws/Instagram.svg';
 import Behance from '../draws/Behance.svg';
 
+import pngFooter from '../draws/BG-png.png';
 
 export default function Footer() {
-    const parallax = useRef()
     return(
         <footer className="footer">
+            <img className="footerpng" src={pngFooter} alt="svgFooter" />
             <AstroIllustration></AstroIllustration>
             <div className="container-links">
                 <ul>
@@ -29,11 +30,11 @@ export default function Footer() {
                     <li>   <a href="#about"> About me</a>  </li>
                     <li>   <a href="#contact"> Contact </a>    </li>
                     <div className="icons">
-                            <a href=""> <img src={LinkeDin} alt=""/></a>
-                            <a href=""> <img src={Instagram} alt=""/></a>
-                            <a href=""> <img src={CodePen} alt=""/></a>
-                            <a href=""> <img src={GitHub} alt=""/></a>
-                            <a href=""> <img src={Behance} alt=""/></a>
+                            <a href="https://www.linkedin.com/in/angelruiz95/" target="_blank"> <img src={LinkeDin} alt=""/></a>
+                            <a href="https://www.instagram.com/angelus_dev/" target="_blank"> <img src={Instagram} alt=""/></a>
+                            <a href="https://codepen.io/_josueangel" target="_blank"> <img src={CodePen} alt=""/></a>
+                            <a href="https://github.com/dehorus" target="_blank"> <img src={GitHub} alt=""/></a>
+                            <a href="https://www.behance.net/angelruiz12" target="_blank"> <img src={Behance} alt=""/></a>
                     </div>
                     <p>Made with <strong>ReactJS, Sanity, React-spring</strong></p>
                     </ul>

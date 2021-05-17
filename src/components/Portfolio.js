@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react'
 import sanityClient from '../helpers/client';
 import  './Portfolio.scss'
 import Footer from './Footer';
+import pngFooter from '../draws/BG-png.png';
 
 export default function Portfolio() {
     const [projectData, setProjectData] = useState(null);
@@ -32,16 +33,17 @@ export default function Portfolio() {
 
     return (
         <main id="portfolio">
-            <Parallax config={config.molasses} pages={1.45}>
+            <Parallax config={config.molasses} pages={1.4}>
                 <ParallaxLayer offset={0} speed = {0.5}>
                 <div className="black-space-portfolio">
-                    <section className ="direction aurora">
+                    <section className ="portfolio-hero">
+                        <img src={pngFooter} alt="pngFooter" />
                         <h3> Portfolio <span>🚀</span> </h3>
                     </section>
                 </div> 
                 </ParallaxLayer>
                 <div className="container-portfolio">
-                <ParallaxLayer factor={1.5} offset={0.05} speed = {2} >
+                <ParallaxLayer factor={1.5} offset={0.2} speed = {2} >
                 <section className="portfolio-content">
                 {projectData && projectData.map((project) => (
                     <article className="cards-portfolio">
@@ -63,8 +65,10 @@ export default function Portfolio() {
                 </section>
                 </ParallaxLayer>
                 </div>
+                <ParallaxLayer className="footer-parallax" factor={1.5} offset={0.9999} speed = {1.5}>
+                    <Footer></Footer>
+                </ParallaxLayer>
             </Parallax>
-            <Footer></Footer>
         </main>
     )
 }

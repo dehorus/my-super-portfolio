@@ -7,6 +7,7 @@ import sanityClient from '../helpers/client'
 import { Link } from 'react-router-dom';
 import './Post.scss';
 import Footer from './Footer';
+import pngFooter from '../draws/BG-png.png';
 
 export default  function Post() {
 
@@ -32,15 +33,16 @@ export default  function Post() {
 
     return(
         <main className="blog-section">
-            <Parallax config={config.molasses} pages={1.45}>
+            <Parallax config={config.molasses} pages={2}>
             <ParallaxLayer offset={0} speed = {0.5}>
             <div className="black-space-blog">
-                <section className ="direction aurora">
+                <section className ="blog-hero">
+                    <img src={pngFooter} alt="pngFooter" />
                     <h3> Blog <span>🗒️</span> </h3>
                 </section>
             </div> 
             </ParallaxLayer>
-            <ParallaxLayer factor={1.5} offset={0.05} speed = {2} >
+            <ParallaxLayer factor={1.5} offset={0.5} speed = {2} >
             <section className="container-mobile">
                 <div className="articles">
                     {postData && postData.map((post, index ) => ( 
@@ -59,8 +61,10 @@ export default  function Post() {
                 </div>
             </section>
             </ParallaxLayer>
-            </Parallax>
-            <Footer></Footer>
+            <ParallaxLayer factor={1} offset={1} speed = {1.8}>
+                <Footer></Footer>
+            </ParallaxLayer>
+            </Parallax>   
         </main>
     );
 }

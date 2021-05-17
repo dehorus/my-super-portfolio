@@ -35,7 +35,7 @@ export default  function Home() {
 
     return (
         <main className="home">
-            <Parallax config={config.molasses} pages={2.28} >
+            <Parallax config={config.molasses} pages={2.53} >
                 <ParallaxLayer factor={1.5} offset= {0} speed={2.5}>
                     <div className="hero">
                         <div className="container-mobile">
@@ -153,7 +153,7 @@ export default  function Home() {
                     </div>
                     
                 </ParallaxLayer>
-                <ParallaxLayer factor={1} offset={1.999} speed={2}>
+                <ParallaxLayer className="footer-home" factor={1} offset={1.9999} speed={2}>
                     <Footer></Footer>
                 </ParallaxLayer>
             </Parallax>   
