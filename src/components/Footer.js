@@ -1,7 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
-import AstroIllustration from './AstroIllustration';
 import "./NavBar.scss";
 import './Footer.scss';
 
