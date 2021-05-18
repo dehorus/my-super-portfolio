@@ -42,60 +42,67 @@ main#portfolio {
 
     section.portfolio-content {
         background: transparent;
-        display: grid;
-        padding-top: 5em;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        gap: 2em;
 
-        article.cards-portfolio {
-            width: 100%;
+        .container-portfolio {
+            display: grid;
+            padding-top: 5em;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-rows: 1fr 1fr;
+            gap: 2em;
 
-            .card {
-                position: relative;
 
-                img {
-                    width: 100%;
-                    height: 25em;
-                }
+            article.cards-portfolio {
+                width: 100%;
 
-                .content {
-                    background-color: rgba(0, 0, 0, 0.7);
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    bottom: 0;
-                    text-align: center;
+                .card {
+                    position: relative;
 
-                    h3 {
-                        font-size: 1.8em;
-                        color: white;
-                        text-shadow: 3px 1px 0px rgba(0, 0, 0, 1);
-                        text-align: center;
-                        margin-top: 1em;
+                    img {
+                        width: 100%;
+                        height: 25em;
+                        object-fit: cover;
                     }
 
-                    p,
-                    span {
-                        color: white;
-                        margin-top: 2em;
+                    .content {
+                        background-color: rgba(0, 0, 0, 0.7);
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        bottom: 0;
                         text-align: center;
+
+                        h3 {
+                            font-size: 1.8em;
+                            color: white;
+                            text-shadow: 3px 1px 0px rgba(0, 0, 0, 1);
+                            text-align: center;
+                            margin-top: 1em;
+                        }
+
+                        p,
+                        span {
+                            color: white;
+                            margin-top: 2em;
+                            text-align: center;
+                        }
+
+
                     }
-
-
                 }
             }
+
         }
     }
 
     .buttons {
         margin-top: 2em;
+        width: 100%;
     }
 
     button {
         background-color: transparent;
         display: block;
-        width: 90%;
+        width: 60%;
         margin: 1em auto;
         padding: 1em 0;
         border-radius: 15px;

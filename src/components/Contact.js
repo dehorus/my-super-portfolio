@@ -15,7 +15,7 @@ export default function Contact() {
     }
     return(
         <main id="contact-site">
-            <Parallax config={config.molasses} pages={1.25}>
+            <Parallax config={config.molasses} pages={1.165}>
                 <ParallaxLayer offset={0} speed={1.2}>
                 <div className="black-space-portfolio">
                     <section className ="contact-hero">
@@ -45,8 +45,6 @@ export default function Contact() {
                             <button type="submit" disabled={submit.submitting}>CONTACT</button>
                             </form>
                     </div>
-                </ParallaxLayer>
-                <ParallaxLayer className="footer-contact" factor={1.5} offset={0.999} speed={3}>
                     <Footer></Footer>
                 </ParallaxLayer>
             </Parallax>

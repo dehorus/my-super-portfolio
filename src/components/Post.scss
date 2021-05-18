@@ -53,9 +53,10 @@ main.blog-section {
 .articles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     margin-top: 2em;
     gap: 2em;
+    margin-bottom: 21em;
 
     .article-post {
         position: relative;
@@ -93,5 +94,17 @@ main.blog-section {
         .container-mobile {
             width: 70%;
         }
+    }
+}
+
+@media (min-height: 640px) {
+    .articles {
+        margin-bottom: 19.5em;
+    }
+}
+
+@media (min-height: 812px) {
+    .articles {
+        margin-bottom: 45em;
     }
 }

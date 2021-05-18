@@ -42,7 +42,7 @@ export default  function Post() {
                 </section>
             </div> 
             </ParallaxLayer>
-            <ParallaxLayer factor={1.5} offset={0.5} speed = {2} >
+            <ParallaxLayer factor={1.5} offset={0.8} speed = {2} >
             <section className="container-mobile">
                 <div className="articles">
                     {postData && postData.map((post, index ) => ( 
@@ -60,9 +60,7 @@ export default  function Post() {
                     ))}
                 </div>
             </section>
-            </ParallaxLayer>
-            <ParallaxLayer factor={1} offset={1} speed = {1.8}>
-                <Footer></Footer>
+            <Footer></Footer>
             </ParallaxLayer>
             </Parallax>   
         </main>
