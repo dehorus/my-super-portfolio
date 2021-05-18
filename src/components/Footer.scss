@@ -7,7 +7,7 @@ footer.footer {
     background-color: #4C5068;
     position: relative;
     overflow: hidden;
-    margin-top: 32em;
+    margin-top: 2em;
 
     .footerpng {
         position: absolute;
@@ -79,5 +79,41 @@ footer ul {
             justify-content: space-around;
             flex-direction: row;
         }
+    }
+}
+
+@media (min-height: 667px) {
+    footer.footer {
+        margin-top: 6.5em;
+    }
+}
+
+@media (min-height: 720px) {
+    footer.footer {
+        margin-top: 16em;
+    }
+}
+
+@media (min-height: 731px) {
+    footer.footer {
+        margin-top: 17em;
+    }
+}
+
+@media (min-height: 812px) {
+    footer.footer {
+        margin-top: 30em;
+    }
+}
+
+@media (min-height: 1024px) {
+    footer.footer {
+        margin-top: 70em;
+    }
+}
+
+@media (min-height: 1366px) {
+    footer.footer {
+        margin-top: 150em;
     }
 }

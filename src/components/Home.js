@@ -35,8 +35,8 @@ export default  function Home() {
 
     return (
         <main className="home">
-            <Parallax config={config.molasses} pages={2.53} >
-                <ParallaxLayer factor={1.5} offset= {0} speed={2.5}>
+            <Parallax config={config.molasses} pages={2.77} >
+                <ParallaxLayer  offset= {0} speed={2.5}>
                     <div className="hero">
                         <div className="container-mobile">
                             <ParallaxLayer offset={0.1} speed={1.5}>
@@ -99,7 +99,7 @@ export default  function Home() {
                     <img className="sparkle-3" src={sparkles} alt="sparkles"/>
                     <img className="sparkle-4" src={sparkles1} alt="sparkles"/>
                 </ParallaxLayer>
-                <ParallaxLayer factor={1} offset={1.5} speed={2.5}>
+                <ParallaxLayer factor={1} offset={1.7} speed={2.5}>
                     <div className="skills-section">
                         <h2> Skills & knolewedge </h2>
                         <div className="skills">
@@ -150,11 +150,9 @@ export default  function Home() {
                             <NavLink to="/contact"> Contact <span> 📝 </span> </NavLink>
                             <img src={rocket} alt="rocket" />
                         </div>
+                        <Footer></Footer>
                     </div>
-                    
-                </ParallaxLayer>
-                <ParallaxLayer className="footer-home" factor={1} offset={1.9999} speed={2}>
-                    <Footer></Footer>
+
                 </ParallaxLayer>
             </Parallax>   
         </main>

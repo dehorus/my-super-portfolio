@@ -132,6 +132,12 @@
     }
 }
 
+@media (min-width: 768px) {
+    .moon-illustration {
+        bottom: -28em;
+    }
+}
+
 @media (min-width: 1024px) {
     .moon-illustration {
         width: 60%;
