@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
-import { debounce } from  '../helpers/Helper';
+import { debounce } from  '../Helper';
 import "./NavBar.scss";
 import LinkeDin from '../draws/LinkeDin.svg';
 import CodePen from '../draws/CodePen.svg';
