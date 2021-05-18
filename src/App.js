@@ -1,5 +1,4 @@
-import { BrowserRouter, Route, Switch, useLocation } from "react-router-dom";
-import { useTransition, animated } from 'react-spring';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";

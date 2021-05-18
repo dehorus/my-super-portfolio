@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './Home.scss';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
-import { useSpring, animated, config } from 'react-spring';
+import {  config } from 'react-spring';
 import sanityClient from '../client'
 import { Link } from 'react-router-dom';
 import './Post.scss';

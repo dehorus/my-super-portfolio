@@ -57,9 +57,9 @@ export default function SinglePosts() {
                                 <span className="name-author">{singlePost.name}</span>
                             </div>
                             <div className="redes-sociales">
-                                <a href="https://www.linkedin.com/in/angelruiz95/" target="_blank"> <img src={LinkedinBlack} alt="linkedin" /></a>
-                                <a href="https://github.com/dehorus" target="_blank"> <img src={GithubBlack} alt="github" target="_blank"/></a>
-                                <a href="https://www.behance.net/angelruiz12" target="_blank"> <img src={BehanceBlack} alt="behance"target="_blank" /></a>
+                                <a href="https://www.linkedin.com/in/angelruiz95/" target="_blank" rel="noreferrer"> <img src={LinkedinBlack} alt="linkedin" /></a>
+                                <a href="https://github.com/dehorus" target="_blank" rel="noreferrer"> <img src={GithubBlack} alt="github" target="_blank"/></a>
+                                <a href="https://www.behance.net/angelruiz12" target="_blank" rel="noreferrer"> <img src={BehanceBlack} alt="behance"target="_blank" /></a>
                             </div>
                         </div>
                      </div>

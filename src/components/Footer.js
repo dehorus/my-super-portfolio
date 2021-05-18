@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import AstroIllustration from './AstroIllustration';
@@ -30,11 +30,11 @@ export default function Footer() {
                     <li>   <a href="#about"> About me</a>  </li>
                     <li>   <a href="#contact"> Contact </a>    </li>
                     <div className="icons">
-                            <a href="https://www.linkedin.com/in/angelruiz95/" target="_blank"> <img src={LinkeDin} alt=""/></a>
-                            <a href="https://www.instagram.com/angelus_dev/" target="_blank"> <img src={Instagram} alt=""/></a>
-                            <a href="https://codepen.io/_josueangel" target="_blank"> <img src={CodePen} alt=""/></a>
-                            <a href="https://github.com/dehorus" target="_blank"> <img src={GitHub} alt=""/></a>
-                            <a href="https://www.behance.net/angelruiz12" target="_blank"> <img src={Behance} alt=""/></a>
+                            <a href="https://www.linkedin.com/in/angelruiz95/" target="_blank" rel="noreferrer"> <img src={LinkeDin} alt=""/></a>
+                            <a href="https://www.instagram.com/angelus_dev/" target="_blank" rel="noreferrer"> <img src={Instagram} alt=""/></a>
+                            <a href="https://codepen.io/_josueangel" target="_blank" rel="noreferrer"> <img src={CodePen} alt=""/></a>
+                            <a href="https://github.com/dehorus" target="_blank" rel="noreferrer"> <img src={GitHub} alt=""/></a>
+                            <a href="https://www.behance.net/angelruiz12" target="_blank" rel="noreferrer"> <img src={Behance} alt=""/></a>
                     </div>
                     <p>Made with <strong>ReactJS, Sanity, React-spring</strong></p>
                     </ul>

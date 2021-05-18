@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contac.scss';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import { useSpring, animated, config } from 'react-spring';
+import { config } from 'react-spring';
 import {useForm, ValidationError} from '@formspree/react'
 import Footer from './Footer';
 import frame from '../draws/Frame-1.jpg';
@@ -26,7 +26,7 @@ export default function Contact() {
                 </ParallaxLayer>
                 <ParallaxLayer offset={0.6} speed={2.5}>
                     <div className="form-complete">
-                        <img className="image-form" src={frame} alt="photo" />
+                        <img className="image-form" src={frame} alt="descriptionImage" />
                         <img className="cohete-opacity" src={rocket} alt="rocket" />
                             <form onSubmit={setSubmit} id="contact" className="contact-form">
                             <h2>Contact me!</h2>

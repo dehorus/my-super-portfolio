@@ -7,15 +7,13 @@ import responsive from '../draws/services-il/responsive.svg';
 
 export default function About() {
 
-   
-
     return(
         <section  id ="about" className="about">
             <div className="container-about">
                 <div className="info-content">
                 <div className="profile-pic-text">
                          <h2>ABOUT ME!</h2>
-                    <img src={Photo} alt="profile-photo"/>
+                    <img src={Photo} alt="profile"/>
                 </div>
                 <div className="text-content">
                     <p>I am a front end developer jr and designer, I am an enthusiast of new technologies, I like to be constantly learning and my purpose is to be a senior developer, create and create.</p>

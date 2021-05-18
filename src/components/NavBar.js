@@ -59,17 +59,17 @@ export default function NavBar() {
                         </li>
                         <h3 className="title-social">My social media. </h3>
                         <div className="icons">
-                            <a href="https://www.linkedin.com/in/angelruiz95/"> <img src={LinkeDin} alt="" target="_blank"/></a>
-                            <a href="https://www.instagram.com/angelus_dev/"> <img src={Instagram} alt="" target="_blank"/></a>
-                            <a href="https://codepen.io/_josueangel"> <img src={CodePen} alt="" target="_blank"/></a>
-                            <a href="https://github.com/dehorus"> <img src={GitHub} alt="" target="_blank"/></a>
-                            <a href="https://www.behance.net/angelruiz12"> <img src={Behance} alt="" target="_blank"/></a>
+                            <a href="https://www.linkedin.com/in/angelruiz95/" target="_blank" rel="noreferrer"> <img src={LinkeDin} alt="" /></a>
+                            <a href="https://www.instagram.com/angelus_dev/" target="_blank" rel="noreferrer"> <img src={Instagram} alt="" /></a>
+                            <a href="https://codepen.io/_josueangel" target="_blank" rel="noreferrer"> <img src={CodePen} alt="" /></a>
+                            <a href="https://github.com/dehorus" target="_blank" rel="noreferrer"> <img src={GitHub} alt="" /></a>
+                            <a href="https://www.behance.net/angelruiz12" target="_blank" rel="noreferrer"> <img src={Behance} alt="" /></a>
                         </div>
                     </ul>
                     <div className="icons-desktop">
-                        <a href="https://www.linkedin.com/in/angelruiz95/" target="_blank"> <img src={LinkedinBlack} alt="linkedin" /></a>
-                        <a href="https://github.com/dehorus" target="_blank"> <img src={GithubBlack} alt="github" target="_blank"/></a>
-                        <a href="https://www.behance.net/angelruiz12" target="_blank"> <img src={BehanceBlack} alt="behance"target="_blank" /></a>
+                        <a href="https://www.linkedin.com/in/angelruiz95/" target="_blank" rel="noreferrer"> <img src={LinkedinBlack} alt="linkedin" /></a>
+                        <a href="https://github.com/dehorus" target="_blank" rel="noreferrer"> <img src={GithubBlack} alt="github" target="_blank"/></a>
+                        <a href="https://www.behance.net/angelruiz12" target="_blank" rel="noreferrer"> <img src={BehanceBlack} alt="behance"target="_blank" /></a>
                     </div> 
                 </nav>
             </div>

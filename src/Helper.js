@@ -1,4 +1,3 @@
-import React from 'react'
 
 export  function debounce(func, wait, immediate) {
     var timeout;

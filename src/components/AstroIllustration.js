@@ -65,12 +65,12 @@ export default function AstroIllustration() {
         </g>
         <defs>
         <linearGradient id="paint0_linear" x1="431.393" y1="356.919" x2="413.214" y2="362.093" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FA0000"/>
-        <stop offset="1" stop-color="#FF0099" stop-opacity="0.94"/>
+        <stop stopColor="#FA0000"/>
+        <stop offset="1" stopColor="#FF0099" stopOpacity="0.94"/>
         </linearGradient>
         <linearGradient id="paint1_linear" x1="375" y1="398" x2="334" y2="406" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#0DFFE2"/>
-        <stop offset="1" stop-color="#FAFF17"/>
+        <stop stopColor="#0DFFE2"/>
+        <stop offset="1" stopColor="#FAFF17"/>
         </linearGradient>
         </defs>
         </svg>
