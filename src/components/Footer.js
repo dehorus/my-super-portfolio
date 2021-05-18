@@ -17,7 +17,6 @@ export default function Footer() {
     return(
         <footer className="footer">
             <img className="footerpng" src={pngFooter} alt="svgFooter" />
-            <AstroIllustration></AstroIllustration>
             <div className="container-links">
                 <ul>
                     <li>
@@ -29,7 +28,7 @@ export default function Footer() {
                     <li>   <a href="#portflio">Portfolio</a>  </li>
                     <li>   <a href="#about"> About me</a>  </li>
                     <li>   <a href="#contact"> Contact </a>    </li>
-                    <div className="icons">
+                    <div className="icons-footer">
                             <a href="https://www.linkedin.com/in/angelruiz95/" target="_blank" rel="noreferrer"> <img src={LinkeDin} alt=""/></a>
                             <a href="https://www.instagram.com/angelus_dev/" target="_blank" rel="noreferrer"> <img src={Instagram} alt=""/></a>
                             <a href="https://codepen.io/_josueangel" target="_blank" rel="noreferrer"> <img src={CodePen} alt=""/></a>

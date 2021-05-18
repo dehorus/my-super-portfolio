@@ -92,14 +92,14 @@ export default  function Home() {
                     <img className="sparkle-1" src={sparkles} alt="sparkles"/>
                     <img className="sparkle-2" src={sparkles1} alt="sparkles"/>
                 </ParallaxLayer>
-                <ParallaxLayer factor={1.5}  offset={0.9} speed = {1.5}>
+                <ParallaxLayer factor={1.5}  offset={0.999} speed = {1.5}>
                     <About></About>
                 </ParallaxLayer>
                 <ParallaxLayer factor={1} offset={1} speed={2}> 
                     <img className="sparkle-3" src={sparkles} alt="sparkles"/>
                     <img className="sparkle-4" src={sparkles1} alt="sparkles"/>
                 </ParallaxLayer>
-                <ParallaxLayer factor={1} offset={1} speed={2.5}>
+                <ParallaxLayer factor={1} offset={1.5} speed={2.5}>
                     <div className="skills-section">
                         <h2> Skills & knolewedge </h2>
                         <div className="skills">
