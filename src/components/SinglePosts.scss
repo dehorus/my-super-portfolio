@@ -1,0 +1,110 @@
+@import '../index.scss';
+
+
+main#single-post {
+    background: linear-gradient(180deg, #FED9B7 0%, #FDFCDC 100%);
+    margin: 0;
+    height: 100%;
+
+    header.header-hero {
+        width: 100%;
+        height: 80vh;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .container-single {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2em;
+        padding: 2em 0;
+
+        h1 {
+            text-align: left;
+        }
+
+        h2 {
+            margin-top: 2em;
+            font-size: 2em;
+            margin-bottom: 2em;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 1.5em;
+        }
+
+        hr {
+            background-color: black;
+            color: black;
+            margin-top: 5em;
+            padding: 0.1em 0;
+        }
+
+        .author-section {
+            margin-top: 2em;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            img {
+                width: 8em;
+                border-radius: 25%;
+                margin: 0 auto;
+            }
+
+            .author-text {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-size: 2.5em;
+                    font-weight: 700;
+                }
+
+                span.name-author {
+                    font-size: 2.5em;
+                    font-weight: 500;
+                    letter-spacing: 3px;
+                    font-style: italic;
+                }
+            }
+
+            .redes-sociales {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                gap: 0.5em;
+                margin-top: 1em;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    main#single-post {
+        .container-single {
+            .author-section {
+                flex-direction: row;
+
+                .author-text {
+                    margin-left: 4em;
+                }
+
+                .redes-sociales {
+                    margin-left: 55%;
+                }
+            }
+        }
+    }
+}

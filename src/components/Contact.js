@@ -6,6 +6,7 @@ import {useForm, ValidationError} from '@formspree/react'
 import Footer from './Footer';
 import frame from '../draws/Frame-1.jpg';
 import pngFooter from '../draws/BG-png.png';
+import rocket from "../draws/lanzamiento.svg"
 
 export default function Contact() {
     const [submit, setSubmit] = useForm("xvovdrvz");
@@ -14,7 +15,7 @@ export default function Contact() {
     }
     return(
         <main id="contact-site">
-            <Parallax config={config.molasses} pages={1.15}>
+            <Parallax config={config.molasses} pages={1.25}>
                 <ParallaxLayer offset={0} speed={1.2}>
                 <div className="black-space-portfolio">
                     <section className ="contact-hero">
@@ -23,9 +24,10 @@ export default function Contact() {
                     </section>
                 </div> 
                 </ParallaxLayer>
-                <ParallaxLayer offset={0.5} speed={2.5}>
+                <ParallaxLayer offset={0.6} speed={2.5}>
                     <div className="form-complete">
                         <img className="image-form" src={frame} alt="photo" />
+                        <img className="cohete-opacity" src={rocket} alt="rocket" />
                             <form onSubmit={setSubmit} id="contact" className="contact-form">
                             <h2>Contact me!</h2>
                             <label htmlFor="name">Name</label>
@@ -44,7 +46,7 @@ export default function Contact() {
                             </form>
                     </div>
                 </ParallaxLayer>
-                <ParallaxLayer factor={1.5} offset={0.99} speed={3}>
+                <ParallaxLayer className="footer-contact" factor={1.5} offset={0.999} speed={3}>
                     <Footer></Footer>
                 </ParallaxLayer>
             </Parallax>
