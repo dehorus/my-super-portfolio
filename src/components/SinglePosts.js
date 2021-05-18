@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
-import sanityClient from '../helpers/client.js'
+import sanityClient from '../client.js'
 import imgageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
 import './SinglePosts.scss';

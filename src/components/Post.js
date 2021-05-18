@@ -3,7 +3,7 @@ import './Home.scss';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 import { useSpring, animated, config } from 'react-spring';
-import sanityClient from '../helpers/client'
+import sanityClient from '../client'
 import { Link } from 'react-router-dom';
 import './Post.scss';
 import Footer from './Footer';

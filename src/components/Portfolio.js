@@ -2,7 +2,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 import { useSpring, animated, config } from 'react-spring';
 import React, { useState, useEffect } from 'react'
-import sanityClient from '../helpers/client';
+import sanityClient from '../client';
 import  './Portfolio.scss'
 import Footer from './Footer';
 import pngFooter from '../draws/BG-png.png';
