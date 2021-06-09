@@ -1,50 +1,47 @@
-@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&family=Open+Sans&display=swap");
-@import "/node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&family=Open+Sans&display=swap');
+@import '/node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
 
 /* Fonts */
 
-$font-titles: 'Assistant',
-sans-serif;
-$font-texts: 'Open Sans',
-sans-serif;
+$font-titles: 'Assistant', sans-serif;
+$font-texts: 'Open Sans', sans-serif;
 
 /* Colors */
 
-$CG-blue: #0081A7;
+$CG-blue: #0081a7;
 $CG-blue-hover: #004559;
-$Verdi-gris: #00AFB9;
+$Verdi-gris: #00afb9;
 $Verdi-gris-hover: #007076;
-$base-color: #FDFCDC;
-$base-color-hover: #DAD9B6;
-$Second-Base-Peach-Color: #FED9B7;
-$Second-Base-Peach-Color-hover: #DDA16B;
-$Bitter-Sweeter: #F07167;
-$Bitter-Sweeter-hover: #B3554E;
+$base-color: #fdfcdc;
+$base-color-hover: #dad9b6;
+$Second-Base-Peach-Color: #fed9b7;
+$Second-Base-Peach-Color-hover: #dda16b;
+$Bitter-Sweeter: #f07167;
+$Bitter-Sweeter-hover: #b3554e;
 
 /* Rules */
 .container {
-    width: 80%;
-    margin: 0 auto;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .container-mobile {
-    width: 100%;
-    margin: 0 auto;
-}
-
-
-* {
-    font-family: $font-texts;
+	width: 100%;
+	margin: 0 auto;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
+	font-family: $font-texts;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 h1,
@@ -52,30 +49,30 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: $font-titles;
+	font-family: $font-titles;
 }
 
 h1 {
-    font-weight: 700;
-    font-size: 42px;
+	font-weight: 700;
+	font-size: 42px;
 }
 
 h2 {
-    font-weight: 600;
-    font-size: 30px;
+	font-weight: 600;
+	font-size: 30px;
 }
 
 h3 {
-    font-weight: 600;
-    font-size: 24px;
+	font-weight: 600;
+	font-size: 24px;
 }
 
 h4 {
-    font-weight: 600;
-    font-size: 18px;
+	font-weight: 600;
+	font-size: 18px;
 }
 
 h5 {
-    font-weight: 300;
-    font-size: 16px;
+	font-weight: 300;
+	font-size: 16px;
 }
